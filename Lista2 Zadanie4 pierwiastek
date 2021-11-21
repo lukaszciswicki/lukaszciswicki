@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+
+{
+    double x=1, i=1, r=1000;
+    for(i=1; i<=1000; i++)
+    {
+    x=x*pow(i, 1.0/r);
+    }
+printf("pow(n!, 1/10000) = %f\n", x);
+}
+
+
+
+
