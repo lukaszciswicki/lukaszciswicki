@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+double s=1, n=1;
+
+while(s<10)
+    {
+    n++;
+    s=s+(1/n);
+
+    }
+printf("s = %f\n", s);
+printf("n = %f", n);
+}
