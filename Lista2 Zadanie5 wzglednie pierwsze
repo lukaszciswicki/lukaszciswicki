@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int nwd(int a, int b)
+{
+    while (b>0)
+    {
+        int reszta=a%b;
+        a=b;
+        b=reszta ;
+    }
+    return a;
+}
+
+int main(void)
+{
+    int a, b  ;
+    double w, licznik;
+    for(a=1; a<=1000; a++)
+    {
+       for(b=1; b<a; b++)
+       {
+            if(nwd(a,b)==1)
+            {
+                   // printf("%d;%d\n", a, b);
+                   licznik++;
+            }
+       }
+        w=licznik/(a*a);
+        printf("%f;%f\n", licznik, w);
+
+    }
+}
