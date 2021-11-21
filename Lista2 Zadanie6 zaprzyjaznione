@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int sumaDzielnikow(int n)
+{
+    int suma = 1;
+    for(int i=2; i<n; i++)
+        if(n%i==0)
+            suma+=i;
+    return suma;
+}
+
+int main ()
+{
+    int k=1000, m, sumaM;
+    int sumy[k+1];
+    for(int n=1; n<k; n++)
+    {
+        sumy[n]=0;
+        sumy[n]=sumaDzielnikow(n);
+        if(sumy[n]==n)
+            printf("Liczba doskonala: %d\n", n);
+
+        m=sumy[n];
+        sumaM=sumaDzielnikow(m);
+
+        if(m!=n && sumaM==n)
+            printf("Liczby zaprzyjaznione %d i %d\n", n, m);
+    }
+}
