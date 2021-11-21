@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int n;
+double suma, srednia, a;
+printf("podaj liczbe n\n");
+scanf("%d", &n);
+printf("wypisz liczby rzeczywiste\n");
+
+for(int i=0; i<n; i++)
+    {
+    scanf("%lf", &a);
+    suma += a;
+    }
+srednia = suma/n;
+printf("srednia = %lf", srednia);
+}
+
