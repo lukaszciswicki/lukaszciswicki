@@ -1,0 +1,48 @@
+# include <stdio.h>
+
+int main ( void )
+{
+
+    int zlote,  zl200, zl100, zl50, zl20, zl10, zl5, zl2, zl1;
+    int grosze, gr50, gr20, gr10, gr5, gr2, gr1;
+
+    printf("Podaj liczbe zlotych \n");
+    scanf("%d", &zlote);
+    printf("Podaj liczbe groszy \n");
+    scanf("%d", &grosze);
+
+    zl200=zlote/200;
+    zlote=zlote-zl200*200;
+
+    zl100=zlote/100;
+    zlote=zlote-zl100*100;
+
+    zl50=zlote/50;
+    zlote=zlote-zl50*50;
+
+    zl20=zlote/20;
+    zlote=zlote-zl20*20;
+
+    zl10=zlote/10;
+    zlote=zlote-zl10*10;
+
+    zl5=zlote/5;
+    zlote=zlote-zl5*5;
+
+    zl2=zlote/2;
+    zlote=zlote-zl2*2;
+
+    zl1=zlote/1;
+    zlote=zlote-zl1*1;
+
+
+
+    if(zl200>0)   printf("%d x 200zl\n", zl200);
+    if(zl100>0)   printf("%d x 100zl\n", zl100);
+    if(zl50>0)    printf("%d x 50zl\n", zl50);
+    if(zl20>0)    printf("%d x 20zl\n", zl20);
+    if(zl10>0)    printf("%d x 10zl\n", zl10);
+    if(zl5>0)     printf("%d x 5zl\n", zl5);
+    if(zl2>0)     printf("%d x 2zl\n", zl2);
+    if(zl1>0)     printf("%d x 1zl\n", zl1);
+}
